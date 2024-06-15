@@ -8,19 +8,18 @@
 </head>
 <body>
     <h1 class="tit">Upload Your Photo</h1>
-    <form action="#" method="post" enctype="multipart/form-data">
-        <label for="photo">Choose a photo:</label><br><br>
-        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
-        
+    <form action="upload.php" method="post" enctype="multipart/form-data">
         <label for="category">Select category:</label><br><br>
-        <select id="category" name="category">
+        <select name="category" id="category" required>
             <option value="Landscapes">Landscapes</option>
             <option value="Wildlife">Wildlife</option>
             <option value="CoastalBirds">Coastal Birds</option>
             <option value="Wedding">Wedding</option>
             <option value="Event">Event</option>
-            <!-- Add more categories here -->
-        </select><br><br><br>
+        </select><br><br>
+        
+        <label for="photo">Choose a photo:</label><br><br>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
         
         <input type="submit" value="Upload">
     </form>
