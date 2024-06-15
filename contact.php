@@ -18,9 +18,92 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	
 	<style>
-		form{
-			padding: 50px;
-		}
+
+		form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			margin-left: 200px;
+			margin-right: 200px;
+			margin-top: 50px;
+        }
+		label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+			width: 150px;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+		.site-footer {
+            background-color: #26272b;
+            padding: 20px 0 10px; /* Decreased padding to reduce height */
+            font-size: 15px;
+            line-height: 24px;
+            color: #fff; /* Changed font color to white */
+        }
+        .site-footer hr {
+            border-top-color: #bbb;
+            opacity: 0.5;
+        }
+        .site-footer hr.small {
+            margin: 20px 0;
+        }
+        .site-footer h6 {
+            color: #fff; /* Ensure headings are also white */
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+        .site-footer a {
+            color: #fff; /* Changed link color to white */
+        }
+        .site-footer a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .footer-links {
+            padding-left: 0;
+            list-style: none;
+        }
+        .footer-links li {
+            display: block;
+        }
+        .footer-links a {
+            color: #fff; /* Changed link color to white */
+        }
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .footer-links.inline li {
+            display: inline-block;
+        }
+        .site-footer .social-icons {
+            text-align: right;
+        }
 	</style>
 
 	
@@ -79,57 +162,50 @@
 	<!-- Contact Section end -->
 	<div class="contact-section">
 		
-			<form action="cform.php" method="post">
-				<h3><center>Enquiry Form</center></h3>
-				<div class="mb-3">
-				  <label for="email" class="form-label">Email address</label>
-				  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-				 
-				</div>
-				<div class="mb-3">
-					<label for="contact" class="form-label">Contact Number</label>
-					<input type="text" class="form-control" id="contact" name="contact" aria-describedby="emailHelp">
-				   
-				  </div>
-				  <div class="mb-3">
-					<label for="location" class="form-label">Location</label>
-					<input type="text" class="form-control" id="location" name="location" aria-describedby="emailHelp">
-				   
-				  </div>
-				  <div class="mb-3">
-					<label for="date" class="form-label">Date</label>
-					<input type="date" class="form-control" id="date" name="date" aria-describedby="emailHelp">
-				   
-				  </div>
-				
-				<button type="submit" class="btn btn-primary" name="submit">Submit</button><br>
-			  </form>
+	<form action="contact_us.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{10}" required>
+
+        <label for="date_time">Preferred Contact Date & Time:</label>
+        <input type="datetime-local" id="date_time" name="date_time" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
 		<br><br>
-		<div class="contact-box">
+        <input type="submit" value="Submit">
+    </form>
+
+
+	<br><br><br><br>
+    <footer class="site-footer">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-location-pin"></i>
-						<p>60-49 Road 11378<br>Scotland</p>	
+						<p>60-49 Road 11378<br>Scotland</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-email"></i>
-						<p><span>Phone:</span> +94 77 123 1234</p>	
-						<p><span>Mail:</span> malcolm@gmail.com</p>	
+						<p><span>Phone:</span> +94 77 123 1234</p>
+						<p><span>Mail:</span> malcolm@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-timer"></i>
-						<p><span>Week Days:</span> 10:00 – 22:00</p>	
-						<p><span>Sunday:</span> Closed</p>	
+						<p><span>Week Days:</span> 10:00 – 22:00</p>
+						<p><span>Sunday:</span> Closed</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 	<!-- Contact Section end -->
 
 	<!--====== Javascripts & Jquery ======-->
