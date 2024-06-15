@@ -43,7 +43,7 @@
 		<div class="menu-social-warp">
 			<div class="menu-social">
 				<a href="#"><i class="ti-facebook"></i></a>
-				<a href="#"><i class="ti-twitter-alt"></i></a>
+				<a href="#"><i class="ti-twitter-amlt"></i></a>
 				<a href="#"><i class="ti-linkedin"></i></a>
 				<a href="#"><i class="ti-instagram"></i></a>
 			</div>
@@ -107,7 +107,7 @@
 				
 				<button type="submit" class="btn btn-primary" name="submit">Submit</button><br>
 			  </form>
-		
+		<br><br>
 		<div class="contact-box">
 			<div class="row">
 				<div class="col-lg-4">
