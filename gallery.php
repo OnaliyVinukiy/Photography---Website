@@ -1,468 +1,153 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Malcolm Lismore photographer</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="malcolm Photography HTML Template"">
-	<meta name="keywords" content="photo, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/themify-icons.css"/>
-	<link rel="stylesheet" href="css/accordion.css"/>
-	<link rel="stylesheet" href="css/fresco.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <title>Malcolm Lismore photographer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="malcolm Photography HTML Template">
+    <meta name="keywords" content="photo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/themify-icons.css"/>
+    <link rel="stylesheet" href="css/accordion.css"/>
+    <link rel="stylesheet" href="css/fresco.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
 
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
 
+    <style>
+        .gall-item {
+            width: 285px; /* 25% width with 20px margin */
+            margin: 2px;
+            float: left; /* Make them float left */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
 
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+        .gall-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
+        .gallery-warp {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
+    <!-- Page Preloder -->
+    
 
-	<!-- Offcanvas Menu Section -->
-	<div class="menu-wrapper">
-		<div class="menu-switch">
-			<i class="ti-menu"></i>
-		</div>
-		<div class="menu-social-warp">
-			<div class="menu-social">
-				<a href="#"><i class="ti-facebook"></i></a>
-				<a href="#"><i class="ti-twitter-alt"></i></a>
-				<a href="#"><i class="ti-linkedin"></i></a>
-				<a href="#"><i class="ti-instagram"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="side-menu-wrapper">
-		<div class="sm-header">
-			<div class="menu-close">
-				<i class="ti-arrow-left"></i>
-			</div>
-			<a href="index.php" class="site-logo">
-				<img src="img/logo.png" alt="">
-			</a>
-		</div>
-		<nav class="main-menu">
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="about.php">About</a></li>
-				<li><a href="gallery.php" class="active">Gallery</a></li>
-				<li><a href="contact.php">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="sm-footer">
-			<div class="sm-socail">
-				<a href="#"><i class="ti-facebook"></i></a>
-				<a href="#"><i class="ti-twitter-alt"></i></a>
-				<a href="#"><i class="ti-linkedin"></i></a>
-				<a href="#"><i class="ti-instagram"></i></a>
-			</div>
-			
-		</div>
-	</div>
-	<!-- Offcanvas Menu Section end -->
+    <!-- Offcanvas Menu Section -->
+    <div class="menu-wrapper">
+        <div class="menu-switch">
+            <i class="ti-menu"></i>
+        </div>
+        <div class="menu-social-warp">
+            <div class="menu-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="side-menu-wrapper">
+        <div class="sm-header">
+            <div class="menu-close">
+                <i class="ti-arrow-left"></i>
+            </div>
+            <a href="index.php" class="site-logo">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="gallery.php" class="active">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sm-footer">
+            <div class="sm-socail">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Section end -->
 
-	<!-- Gallery Section end -->
-	<section class="gallery-section">
-		<div class="gallery-header">
-			<h4>Gallery</h4>
-			<ul class="gallery-filter">
-				<li class="filter all active" data-filter="*">All</li>
-				<li class="filter" data-filter=".Landscapes">Landscapes</li>
-				<li class="filter" data-filter=".Wildlife">Wildlife</li>
-				<li class="filter" data-filter=".CoastalBirds">Coastal Birds</li>
-				<li class="filter" data-filter=".Wedding ">Wedding </li>
-				<li class="filter" data-filter=".Event">Event</li>
-			</ul>
-		</div>
-		<div class="nice-scroll">
-			<div class="gallery-warp">
-				<div class="grid-sizer"></div>
-				<div class="gallery-item gi-big Landscapes">
-					<a class="fresco" href="img/gallery/1l.jpg" data-fresco-group="projects">
-						<img src="img/gallery/1l.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wildlife">
-					<a class="fresco" href="img/gallery/w1.jpg" data-fresco-group="projects">
-						<img src="img/gallery/w1.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-long CoastalBirds">
-					<a class="fresco" href="img/gallery/b1.jpg data-fresco-group="projects">
-						<img src="img/gallery/b1.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-long Event">
-					<a class="fresco" href="img/gallery/s1.jpg" data-fresco-group="projects">
-						<img src="img/gallery/s1.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big Wedding ">
-					<a class="fresco" href="img/gallery/e1.jpg" data-fresco-group="projects">
-						<img src="img/gallery/e1.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big Landscapes">
-					<a class="fresco" href="img/gallery/2l.jpg" data-fresco-group="projects">
-						<img src="img/gallery/2l.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Event">
-					<a class="fresco" href="img/gallery/s2.jpg" data-fresco-group="projects">
-						<img src="img/gallery/s2.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wildlife">
-					<a class="fresco" href="img/gallery/w2.jpg" data-fresco-group="projects">
-						<img src="img/gallery/w2.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wedding ">
-					<a class="fresco" href="img/gallery/e2.jpg" data-fresco-group="projects">
-						<img src="img/gallery/e2.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big Event">
-					<a class="fresco" href="img/gallery/s3.jpg" data-fresco-group="projects">
-						<img src="img/gallery/s3.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Landscapes">
-					<a class="fresco" href="img/gallery/3l.jpg" data-fresco-group="projects">
-						<img src="img/gallery/3l.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h4>Gallery</h4>
+            <ul class="gallery-filter">
+                <li class="filter all active" data-filter="*">All</li>
+                <li class="filter" data-filter=".Landscapes">Landscapes</li>
+                <li class="filter" data-filter=".Wildlife">Wildlife</li>
+                <li class="filter" data-filter=".CoastalBirds">Coastal Birds</li>
+                <li class="filter" data-filter=".Wedding">Wedding</li>
+                <li class="filter" data-filter=".Event">Event</li>
+            </ul>
+        </div>
+        <div class="nice-scroll">
+            <div class="gallery-warp">
+                <div class="grid-sizer"></div>
 
+                <?php
+                $servername = "localhost";
+                $username = "root";  // Update with your database username
+                $password = "avi";  // Update with your database password
+                $dbname = "photography";
 
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
 
-				<div class="gallery-item gi-big Landscapes">
-					<a class="fresco" href="img/gallery/4l.jpg" data-fresco-group="projects">
-						<img src="img/gallery/4l.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wildlife">
-					<a class="fresco" href="img/gallery/w3.jpg" data-fresco-group="projects">
-						<img src="img/gallery/w3.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-long CoastalBirds">
-					<a class="fresco" href="img/gallery/b2.jpg "data-fresco-group="projects">
-						<img src="img/gallery/b2.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-long Event">
-					<a class="fresco" href="img/gallery/s4.jpg" data-fresco-group="projects">
-						<img src="img/gallery/s4.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big Wedding ">
-					<a class="fresco" href="img/gallery/e3.jpg" data-fresco-group="projects">
-						<img src="img/gallery/e3.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big Landscapes">
-					<a class="fresco" href="img/gallery/5l.jpg" data-fresco-group="projects">
-						<img src="img/gallery/5l.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Event">
-					<a class="fresco" href="img/gallery/s8.jpg" data-fresco-group="projects">
-						<img src="img/gallery/s8.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wildlife">
-					<a class="fresco" href="img/gallery/w4.jpg" data-fresco-group="projects">
-						<img src="img/gallery/w4.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item Wedding ">
-					<a class="fresco" href="img/gallery/e4.jpg" data-fresco-group="projects">
-						<img src="img/gallery/e4.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big CoastalBirds">
-					<a class="fresco" href="img/gallery/b3.jpg" data-fresco-group="projects">
-						<img src="img/gallery/b3.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-				</div>
-				<div class="gallery-item gi-big CoastalBirds">
-					<a class="fresco" href="img/gallery/b4.jpg" data-fresco-group="projects">
-						<img src="img/gallery/b4.jpg" alt="">
-					</a>
-					<div class="gi-hover">
-					</div>
-					</div>
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
 
+                $categories = ['Landscapes', 'Wildlife', 'CoastalBirds', 'Wedding', 'Event'];
 
+                foreach ($categories as $category) {
+                    $sql = "SELECT filename FROM $category";
+                    $result = $conn->query($sql);
 
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/5l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/5l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w5.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w5.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-long CoastalBirds">
-						<a class="fresco" href="img/gallery/b5.jpg "data-fresco-group="projects">
-							<img src="img/gallery/b5.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-long Event">
-						<a class="fresco" href="img/gallery/s7.jpg" data-fresco-group="projects">
-							<img src="img/gallery/s7.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Wedding ">
-						<a class="fresco" href="img/gallery/e5.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e5.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/6l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/6l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Event">
-						<a class="fresco" href="img/gallery/s5.jpg" data-fresco-group="projects">
-							<img src="img/gallery/s5.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w6.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w6.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wedding ">
-						<a class="fresco" href="img/gallery/e6.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e6.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big CoastalBirds">
-						<a class="fresco" href="img/gallery/b6.jpg" data-fresco-group="projects">
-							<img src="img/gallery/b6.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big CoastalBirds">
-						<a class="fresco" href="img/gallery/b7.jpg" data-fresco-group="projects">
-							<img src="img/gallery/b7.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big CoastalBirds">
-						<a class="fresco" href="img/gallery/b8.jpg" data-fresco-group="projects">
-							<img src="img/gallery/b8.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big CoastalBirds">
-						<a class="fresco" href="img/gallery/b9.jpg" data-fresco-group="projects">
-							<img src="img/gallery/b9.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big CoastalBirds">
-						<a class="fresco" href="img/gallery/b10.jpg" data-fresco-group="projects">
-							<img src="img/gallery/b10.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wedding ">
-						<a class="fresco" href="img/gallery/e7.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e7.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wedding ">
-						<a class="fresco" href="img/gallery/e8.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e8.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wedding ">
-						<a class="fresco" href="img/gallery/e9.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e9.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wedding ">
-						<a class="fresco" href="img/gallery/e10.jpg" data-fresco-group="projects">
-							<img src="img/gallery/e10.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w7.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w7.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w8.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w8.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w9.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w9.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Wildlife">
-						<a class="fresco" href="img/gallery/w10.jpg" data-fresco-group="projects">
-							<img src="img/gallery/w10.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo "<div class='gall-item $category'>";
+                            echo "<a class='fresco' href='uploads/$category/" . $row["filename"] . "' data-fresco-group='projects'>";
+                            echo "<img src='uploads/$category/" . $row["filename"] . "' alt=''>";
+                            echo "</a>";
+                            echo "<div class='gi-hover'></div>";
+                            echo "</div>";
+                        }
+                    }
+                }
 
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/6l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/6l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/7l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/7l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/8l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/8l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/9l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/9l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item gi-big Landscapes">
-						<a class="fresco" href="img/gallery/10l.jpg" data-fresco-group="projects">
-							<img src="img/gallery/10l.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					<div class="gallery-item Event">
-						<a class="fresco" href="img/gallery/s6.jpg" data-fresco-group="projects">
-							<img src="img/gallery/s6.jpg" alt="">
-						</a>
-						<div class="gi-hover">
-						</div>
-					</div>
-					
-			</div>
-		</div>
-	</section>
-	<!-- Gallery Section end -->
+                $conn->close();
+                ?>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section end -->
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/pana-accordion.js"></script>
-	<script src="js/fresco.min.js"></script>
-	<script src="js/main.js"></script>
-
-	</body>
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/pana-accordion.js"></script>
+    <script src="js/fresco.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

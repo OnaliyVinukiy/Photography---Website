@@ -49,25 +49,34 @@
 			</ul>
 		</nav>
 	</div>
-    <h1 class="text-4xl text-white mt-10 mb-10">Select an Option</h1>
-    <form action="#" method="post" enctype="multipart/form-data">
+    <h1 class="text-4xl text-white mt-10 mb-10">Admin Options</h1>
+    
         <div class="text-center">
         <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-12 mt-4 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Check Orders Received</button>
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-12 mt-4 mb-8 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Check Orders Received</button>
 
-        <button type="button"
-            class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-lg px-5 py-2.5 me-2 mb-2 mt-4 mx-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Add Landscape Image</button>
-
-        <button type="button"
-            class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center mx-4 me-2 mb-2 mt-4 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Add Wedding Image</button>
-        <button type="button"
-            class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-lg px-5 py-2.5 text-center mx-4 me-2 mb-2 mt-4 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Add Wildlife Image</button>
-        <button type="button"
-            class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-lg px-5 py-2.5 text-center mx-4 me-2 mb-2 mt-4 dark:focus:ring-yellow-900">Add Event Image</button><br/>
-        <button type="button"
-            class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-lg px-5 py-2.5 text-center mx-4 me-2 mb-2 mt-4 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Add Birds Image</button>
+        
+       
+        
+       
+        
             </div>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="category">Select category:</label><br><br>
+        <select name="category" id="category" required>
+            <option value="Landscapes">Landscapes</option>
+            <option value="Wildlife">Wildlife</option>
+            <option value="CoastalBirds">Coastal Birds</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Event">Event</option>
+        </select><br><br>
+        
+        <label for="photo">Choose a photo:</label><br><br>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+        
+        <input type="submit" value="Upload">
     </form>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="js/bootstrap.min.js"></script>
