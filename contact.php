@@ -180,32 +180,7 @@
 
 
 	<br><br><br><br>
-    <footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="contact-info">
-						<i class="ti-location-pin"></i>
-						<p>60-49 Road 11378<br>Scotland</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="contact-info">
-						<i class="ti-email"></i>
-						<p><span>Phone:</span> +94 77 123 1234</p>
-						<p><span>Mail:</span> malcolm@gmail.com</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="contact-info">
-						<i class="ti-timer"></i>
-						<p><span>Week Days:</span> 10:00 – 22:00</p>
-						<p><span>Sunday:</span> Closed</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+   
 	<!-- Contact Section end -->
 
 	<!--====== Javascripts & Jquery ======-->
