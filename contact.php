@@ -18,9 +18,42 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	
 	<style>
-		form{
-			padding: 50px;
-		}
+
+		form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			margin-left: 200px;
+			margin-right: 200px;
+			margin-top: 50px;
+        }
+		label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+			width: 150px;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
 	</style>
 
 	<!--[if lt IE 9]>
@@ -82,31 +115,23 @@
 	<!-- Contact Section end -->
 	<div class="contact-section">
 		
-			<form action="cform.php" method="post">
-				<h3><center>Enquiry Form</center></h3>
-				<div class="mb-3">
-				  <label for="email" class="form-label">Email address</label>
-				  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-				 
-				</div>
-				<div class="mb-3">
-					<label for="contact" class="form-label">Contact Number</label>
-					<input type="text" class="form-control" id="contact" name="contact" aria-describedby="emailHelp">
-				   
-				  </div>
-				  <div class="mb-3">
-					<label for="location" class="form-label">Location</label>
-					<input type="text" class="form-control" id="location" name="location" aria-describedby="emailHelp">
-				   
-				  </div>
-				  <div class="mb-3">
-					<label for="date" class="form-label">Date</label>
-					<input type="date" class="form-control" id="date" name="date" aria-describedby="emailHelp">
-				   
-				  </div>
-				
-				<button type="submit" class="btn btn-primary" name="submit">Submit</button><br>
-			  </form>
+	<form action="contact_us.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{10}" required>
+
+        <label for="date_time">Preferred Contact Date & Time:</label>
+        <input type="datetime-local" id="date_time" name="date_time" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+		<br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
 		<br><br>
 		<div class="contact-box">
 			<div class="row">
