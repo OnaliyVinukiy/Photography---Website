@@ -77,7 +77,7 @@
 		<div class="about-warp">
 			<div class="about-left">
 				<div class="about-img">
-					<img src="img/hero/pro1.jpg">
+					<img src="img/hero/pro 12.jpg">
 				</div>
 			</div>
 			<div class="about-right">

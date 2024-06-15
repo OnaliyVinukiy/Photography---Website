@@ -62,27 +62,27 @@
 	<section class="hero-section">
 		<div class="pana-accordion" id="accordion">
     		<div class="pana-accordion-wrap">
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/1.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/hero/6.jpg">
 					<div class="pa-text">
 						<h2>Malcolm Lismore Photographer</h2>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/2.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/hero/7.jpg">
 					<div class="pa-text">
 						<h2>Malcolm Lismore Photographer</h2>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/3.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/hero/11.jpg">
 					<div class="pa-text">
 						<h2>Malcolm Lismore Photographer</h2>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/4.jpg">
+				<div class="pana-accordion-item set-bg" data-setbg="img/hero/8.jpg">
 					<div class="pa-text">
 						<h2>Malcolm Lismore Photographer</h2>
 					</div>
 				</div>
-				<div class="pana-accordion-item set-bg" data-setbg="img/hero/5.webp">
+				<div class="pana-accordion-item set-bg" data-setbg="img/hero/10.jpg">
 					<div class="pa-text">
 						<h2>Malcolm Lismore Photographer</h2>
 					</div>
