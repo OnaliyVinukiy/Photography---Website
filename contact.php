@@ -54,6 +54,56 @@
             color: red;
             margin-bottom: 10px;
         }
+		.site-footer {
+            background-color: #26272b;
+            padding: 20px 0 10px; /* Decreased padding to reduce height */
+            font-size: 15px;
+            line-height: 24px;
+            color: #fff; /* Changed font color to white */
+        }
+        .site-footer hr {
+            border-top-color: #bbb;
+            opacity: 0.5;
+        }
+        .site-footer hr.small {
+            margin: 20px 0;
+        }
+        .site-footer h6 {
+            color: #fff; /* Ensure headings are also white */
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+        .site-footer a {
+            color: #fff; /* Changed link color to white */
+        }
+        .site-footer a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .footer-links {
+            padding-left: 0;
+            list-style: none;
+        }
+        .footer-links li {
+            display: block;
+        }
+        .footer-links a {
+            color: #fff; /* Changed link color to white */
+        }
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .footer-links.inline li {
+            display: inline-block;
+        }
+        .site-footer .social-icons {
+            text-align: right;
+        }
 	</style>
 
 	<!--[if lt IE 9]>
@@ -132,32 +182,33 @@
     </form>
 
 
-		<br><br>
-		<div class="contact-box">
+	<br><br><br><br>
+    <footer class="site-footer">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-location-pin"></i>
-						<p>60-49 Road 11378<br>Scotland</p>	
+						<p>60-49 Road 11378<br>Scotland</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-email"></i>
-						<p><span>Phone:</span> +94 77 123 1234</p>	
-						<p><span>Mail:</span> malcolm@gmail.com</p>	
+						<p><span>Phone:</span> +94 77 123 1234</p>
+						<p><span>Mail:</span> malcolm@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-info">
 						<i class="ti-timer"></i>
-						<p><span>Week Days:</span> 10:00 – 22:00</p>	
-						<p><span>Sunday:</span> Closed</p>	
+						<p><span>Week Days:</span> 10:00 – 22:00</p>
+						<p><span>Sunday:</span> Closed</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 	<!-- Contact Section end -->
 
 	<!--====== Javascripts & Jquery ======-->
