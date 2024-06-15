@@ -45,12 +45,12 @@
 		</div>
 		<nav class="main-menu">
 			<ul>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.php" class="active">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="gallery.php">Gallery</a></li>
+				<li><a href="contact.php">Contact</a></li>
 				<br><br><br>
-				<li><a href="signin.html">Sign in</a></li>
+				<li><a href="signin.php">Sign in</a></li>
 
 			</ul>
 		</nav>

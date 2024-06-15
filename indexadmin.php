@@ -194,14 +194,7 @@ table.table td i {
                         <td><?php  echo $row['width'];?></td>
                         <td><?php  echo $row['length'];?></td>
                         
-                    </tr>
-                   <?php 
-$cnt=$cnt+1;
-} } else {?>
-<tr>
-    <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
-</tr>
-<?php } ?>              
+                    </tr>            
                 
                 
                 </tbody>

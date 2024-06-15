@@ -49,16 +49,16 @@
 			<div class="menu-close">
 				<i class="ti-arrow-left"></i>
 			</div>
-			<a href="index.html" class="site-logo">
+			<a href="index.php" class="site-logo">
 				<img src="img/logo.png" alt="">
 			</a>
 		</div>
 		<nav class="main-menu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="gallery.html" class="active">Gallery</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="gallery.php" class="active">Gallery</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="sm-footer">

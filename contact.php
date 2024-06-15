@@ -54,17 +54,17 @@
 			<div class="menu-close">
 				<i class="ti-arrow-left"></i>
 			</div>
-			<a href="index.html" class="site-logo">
+			<a href="index.php" class="site-logo">
 				<img src="img/logo.png" alt="">
 			</a>
 		</div>
 		<nav class="main-menu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="contact.html" class="active">Contact</a></li>
-				<li><a href="signup.html">Login</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="gallery.php">Gallery</a></li>
+				<li><a href="contact.php" class="active">Contact</a></li>
+				<li><a href="signup.php">Login</a></li>
 			</ul>
 		</nav>
 		<div class="sm-footer">

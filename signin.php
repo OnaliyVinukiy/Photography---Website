@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<!-- partial:index.partial.html -->
+<!-- partial:index.partial.php -->
 <div id="bg"></div>
 
 <form method="post" action="signin.php">
